@@ -1,0 +1,36 @@
+.slot-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.slot-button:disabled {
+  background-color: #ddd;
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+.booking-status {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.no-slots {
+  color: red;
+  font-weight: bold;
+}
+
+.slots-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.slot-button:active {
+  background-color: #45a049;
+}

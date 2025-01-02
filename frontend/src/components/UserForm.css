@@ -1,0 +1,54 @@
+/* UserForm.css */
+
+.userform-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #f9fafc;
+  }
+  
+  .userform-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .userform-input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .userform-input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .userform-button {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .userform-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .userform-button.disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
