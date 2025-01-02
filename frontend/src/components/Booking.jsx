@@ -14,7 +14,7 @@ export const Booking = ({ userId }) => {
     const utcDate = new Date(selectedDate).toISOString().split("T")[0];
     try {
       const response = await fetch(
-        `http://localhost:4500/api/slots?date=${utcDate}`
+        `https://appointment-app-imai.onrender.com/api/slots?date=${utcDate}`
       );
       const data = await response.json();
       if (response.ok) {
@@ -40,7 +40,10 @@ export const Booking = ({ userId }) => {
 
   return (
     <div className="booking-container">
-      <h2>Welcome, {userId}</h2>
+      <h2>
+        Welcome,{" "}
+        <span style={{ color: "royalblue", fontSize: "35px" }}>{userId}</span>
+      </h2>
       <h3>Select a Date for Your Appointment</h3>
       <input
         type="date"

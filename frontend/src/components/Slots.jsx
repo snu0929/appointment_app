@@ -7,11 +7,14 @@ export const Slots = ({ slots, userId, date, refreshSlots }) => {
   const handleSlotBooking = async (slot) => {
     setBookingStatus("booking..");
     try {
-      const response = await fetch(`http://localhost:4500/api/bookSlot`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ userId, date, slot }),
-      });
+      const response = await fetch(
+        `https://appointment-app-imai.onrender.com/api/bookSlot`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ userId, date, slot }),
+        }
+      );
       const data = await response.json();
       if (response.ok) {
         alert(data.message);
